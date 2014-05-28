@@ -11,7 +11,6 @@ public class ContainerTorChest extends Container
     private IInventory lowerChestInventory;
     private int numRows;
     private static final String __OBFID = "CL_00001742";
-    setLightLevel(1);
 
     public ContainerTorChest(IInventory par1IInventory, IInventory par2IInventory)
     {
