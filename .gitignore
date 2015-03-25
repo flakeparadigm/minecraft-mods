@@ -1,11 +1,14 @@
 # Folders in project directories
 .gradle/
 .settings/
+.metadata/
 bin/
 build/
 eclipse/
 .classpath
 .project
+.log
+.lock
 /*/*.txt
 
 # Projects to ignore
