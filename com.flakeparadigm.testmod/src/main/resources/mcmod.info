@@ -1,0 +1,16 @@
+[
+{
+  "modid": "testmod",
+  "name": "Testing Mod",
+  "description": "Testing Mod by Flakeparadigm",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Flakeparadigm"],
+  "credits": "Flakeparadigm. For stuff.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
