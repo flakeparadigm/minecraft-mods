@@ -1,4 +1,4 @@
-package com.Iroknight.BasicMod;
+package com.iroknight.basicmod;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Container;
@@ -16,7 +16,7 @@ public class ContainerTorChest extends Container
     {
         this.lowerChestInventory = par2IInventory;
         this.numRows = par2IInventory.getSizeInventory() / 9;
-        par2IInventory.openInventory();
+        par2IInventory.openInventory(null);
         int i = (this.numRows - 4) * 18;
         int j;
         int k;
@@ -92,7 +92,7 @@ public class ContainerTorChest extends Container
     public void onContainerClosed(EntityPlayer par1EntityPlayer)
     {
         super.onContainerClosed(par1EntityPlayer);
-        this.lowerChestInventory.closeInventory();
+        this.lowerChestInventory.closeInventory(par1EntityPlayer);
     }
 
     /**

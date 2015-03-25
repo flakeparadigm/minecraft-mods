@@ -1,13 +1,12 @@
-package com.Iroknight.BasicMod;
-
-import com.Iroknight.BasicMod.help.Reference;
-import com.Iroknight.BasicMod.help.RegisterHelper;
+package com.iroknight.basicmod;
 
 import net.minecraft.block.Block;
-import net.minecraft.init.Blocks;
-import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.Mod.EventHandler;
-import cpw.mods.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+
+import com.iroknight.basicmod.help.Reference;
+import com.iroknight.basicmod.help.RegisterHelper;
 
 @Mod(modid = Reference.MODID, version = Reference.VERSION)
 public class BasicMod

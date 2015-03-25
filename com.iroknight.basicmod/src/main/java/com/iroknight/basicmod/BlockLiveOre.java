@@ -1,10 +1,10 @@
-package com.Iroknight.BasicMod;
-
-import com.Iroknight.BasicMod.help.Reference;
+package com.iroknight.basicmod;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
+
+import com.iroknight.basicmod.help.Reference;
 
 public class BlockLiveOre extends Block {
 	

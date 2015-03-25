@@ -1,4 +1,4 @@
-package com.Iroknight.BasicMod.help;
+package com.iroknight.basicmod.help;
 
 public class Reference {
 	public static final String MODID = "iroknight_basicmod";
