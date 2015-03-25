@@ -21,3 +21,4 @@ After cloning the repo, you can setup the projects to be used in your eclipse wo
 3. Drag the mod directory to the _updatefml.bat_ file
 4. Once it's done running, open eclipse and load the "eclipse" directory in the mod's directory as your workspace
 5. Profit!
+If the project is not loading properly, or the mod files are missing, try deleting the _.project_ file and repeating step 3.
