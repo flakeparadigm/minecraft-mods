@@ -1,3 +1,4 @@
+@ECHO OFF
 
 set OLDDIR=%CD%
 
