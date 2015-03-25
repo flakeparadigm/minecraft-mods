@@ -10,3 +10,10 @@ eclipse/
 
 # Projects to ignore
 /forge-base
+
+# Windows-specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
