@@ -1,0 +1,12 @@
+# Folders in project directories
+.gradle/
+.settings/
+bin/
+build/
+eclipse/
+.classpath
+.project
+/*/*.txt
+
+# Projects to ignore
+/forge-base
