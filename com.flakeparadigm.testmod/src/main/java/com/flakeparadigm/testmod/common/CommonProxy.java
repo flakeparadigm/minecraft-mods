@@ -4,10 +4,14 @@ import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.entity.RenderItem;
 import net.minecraft.client.resources.model.ModelResourceLocation;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 
 import com.flakeparadigm.testmod.help.Reference;
@@ -15,6 +19,7 @@ import com.flakeparadigm.testmod.help.Reference;
 public class CommonProxy {
 
 	public static Block testingBlock;
+	public static Block torchestBlock;
 
 	/**
 	 * Run before anything else. Read your config, create blocks, items, etc,
@@ -23,6 +28,7 @@ public class CommonProxy {
 	public void preInit(FMLPreInitializationEvent event) {
 		// Blocks
 		testingBlock = new BlockTesting();
+		torchestBlock = new BlockTorchest();
 
 		// register my Items, Entities, etc
 	}
@@ -33,16 +39,51 @@ public class CommonProxy {
 	 */
 	public void load(FMLInitializationEvent event) {
 		// register my Recipies
+		
+		// Testing Block
+		GameRegistry.addRecipe(new ItemStack(testingBlock, 1), new Object[] {
+			// shape
+    		" T ",
+    		"TCT",
+    		" T ",
+    		// composition
+    		'C', Blocks.cobblestone,
+    		'T', Blocks.torch
+		});
+		
+		// Torchest Block
+		GameRegistry.addRecipe(new ItemStack(torchestBlock, 1), new Object[] {
+			// shape
+    		" T ",
+    		"TCT",
+    		" T ",
+    		// composition
+    		'C', Blocks.chest,
+    		'T', Blocks.torch
+		});
 
 		if (event.getSide() == Side.CLIENT) {
-
 			// blocks
 			RenderItem renderItem = Minecraft.getMinecraft().getRenderItem();
+
+			// testingBlock
 			renderItem.getItemModelMesher().register(
-					Item.getItemFromBlock(testingBlock), 0,
-					new ModelResourceLocation(Reference.MODID + ":"
-							+ ((BlockTesting) testingBlock).getName(),
-							"inventory"));
+					Item.getItemFromBlock(testingBlock),
+					0,
+					new ModelResourceLocation(
+							Reference.MODID + ":" + ((BlockTesting) testingBlock).getName(),
+							"inventory"
+					)
+			);
+			
+			renderItem.getItemModelMesher().register(
+					Item.getItemFromBlock(torchestBlock),
+					0,
+					new ModelResourceLocation(
+							"chest",
+							"inventory"
+					)
+			);
 		}
 	}
 

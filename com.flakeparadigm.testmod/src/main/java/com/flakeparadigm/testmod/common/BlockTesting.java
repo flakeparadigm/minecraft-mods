@@ -3,6 +3,7 @@ package com.flakeparadigm.testmod.common;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 import com.flakeparadigm.testmod.help.Reference;
@@ -16,6 +17,9 @@ public class BlockTesting extends Block {
 		GameRegistry.registerBlock(this, NAME);
 		setUnlocalizedName(Reference.MODID + "_" + NAME);
 		setCreativeTab(CreativeTabs.tabBlock);
+		
+
+		setLightLevel(0.9F);
 	}
 	
 	public String getName() {
