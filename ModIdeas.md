@@ -1,6 +1,6 @@
 # Minecraft Mod Ideas
 
-Continue TorChest, plug in to iron chests
+* Continue TorChest, plug in to iron chests
 
-Unicorns for lauren?
+* Unicorns for lauren?
 
