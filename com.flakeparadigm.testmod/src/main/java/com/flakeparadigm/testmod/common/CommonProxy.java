@@ -61,30 +61,6 @@ public class CommonProxy {
     		'C', Blocks.chest,
     		'T', Blocks.torch
 		});
-
-		if (event.getSide() == Side.CLIENT) {
-			// blocks
-			RenderItem renderItem = Minecraft.getMinecraft().getRenderItem();
-
-			// testingBlock
-			renderItem.getItemModelMesher().register(
-					Item.getItemFromBlock(testingBlock),
-					0,
-					new ModelResourceLocation(
-							Reference.MODID + ":" + ((BlockTesting) testingBlock).getName(),
-							"inventory"
-					)
-			);
-			
-			renderItem.getItemModelMesher().register(
-					Item.getItemFromBlock(torchestBlock),
-					0,
-					new ModelResourceLocation(
-							"chest",
-							"inventory"
-					)
-			);
-		}
 	}
 
 	/**

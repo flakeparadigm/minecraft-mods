@@ -10,7 +10,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import com.flakeparadigm.testmod.common.CommonProxy;
 import com.flakeparadigm.testmod.help.Reference;
 
-@Mod(modid = Reference.MODID, name = Reference.VERSION, version = Reference.VERSION)
+@Mod(modid = Reference.MODID, name = "Test Mod", version = Reference.VERSION)
 public class TestMod {
 
 	// Mod class instance

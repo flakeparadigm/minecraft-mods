@@ -17,7 +17,6 @@ public class BlockTesting extends Block {
 		GameRegistry.registerBlock(this, NAME);
 		setUnlocalizedName(Reference.MODID + "_" + NAME);
 		setCreativeTab(CreativeTabs.tabBlock);
-		
 
 		setLightLevel(0.9F);
 	}

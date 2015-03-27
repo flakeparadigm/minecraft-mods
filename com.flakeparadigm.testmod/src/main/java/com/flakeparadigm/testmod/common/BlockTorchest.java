@@ -16,7 +16,6 @@ public class BlockTorchest extends BlockChest {
 		GameRegistry.registerBlock(this, NAME);
 		setUnlocalizedName(Reference.MODID + "_" + NAME);
 		setCreativeTab(CreativeTabs.tabBlock);
-		
 
 		setLightLevel(0.9F);
 	}
